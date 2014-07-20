@@ -1,6 +1,0 @@
-C:\Users\jbjornson\rnd\Patterns\build\FSharp.Patterns.dll
-C:\Users\jbjornson\rnd\Patterns\build\FSharp.Patterns.pdb
-C:\Users\jbjornson\rnd\Patterns\build\Patterns.XML
-C:\Users\jbjornson\rnd\Patterns\src\obj\Release\Patterns.fsprojResolveAssemblyReference.cache
-C:\Users\jbjornson\rnd\Patterns\src\obj\Release\FSharp.Patterns.dll
-C:\Users\jbjornson\rnd\Patterns\src\obj\Release\FSharp.Patterns.pdb
