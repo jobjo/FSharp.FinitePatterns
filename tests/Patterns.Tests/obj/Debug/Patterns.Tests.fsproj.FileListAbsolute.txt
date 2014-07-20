@@ -1,0 +1,17 @@
+C:\Users\jbjornson\rnd\Patterns\Patterns.Tests\bin\Debug\Patterns.Tests.XML
+C:\Users\jbjornson\rnd\Patterns\Patterns.Tests\bin\Debug\Patterns.Tests.pdb
+C:\Users\jbjornson\rnd\Patterns\Patterns.Tests\bin\Debug\FsCheck.dll
+C:\Users\jbjornson\rnd\Patterns\Patterns.Tests\bin\Debug\FsCheck.Xunit.dll
+C:\Users\jbjornson\rnd\Patterns\Patterns.Tests\bin\Debug\FSharp.Core.dll
+C:\Users\jbjornson\rnd\Patterns\Patterns.Tests\bin\Debug\Patterns.exe
+C:\Users\jbjornson\rnd\Patterns\Patterns.Tests\bin\Debug\xunit.dll
+C:\Users\jbjornson\rnd\Patterns\Patterns.Tests\bin\Debug\Patterns.pdb
+C:\Users\jbjornson\rnd\Patterns\Patterns.Tests\bin\Debug\Patterns.xml
+C:\Users\jbjornson\rnd\Patterns\Patterns.Tests\bin\Debug\FsCheck.xml
+C:\Users\jbjornson\rnd\Patterns\Patterns.Tests\bin\Debug\FsCheck.Xunit.xml
+C:\Users\jbjornson\rnd\Patterns\Patterns.Tests\bin\Debug\FSharp.Core.xml
+C:\Users\jbjornson\rnd\Patterns\Patterns.Tests\bin\Debug\xunit.xml
+C:\Users\jbjornson\rnd\Patterns\Patterns.Tests\obj\Debug\Patterns.Tests.fsprojResolveAssemblyReference.cache
+C:\Users\jbjornson\rnd\Patterns\Patterns.Tests\obj\Debug\Patterns.Tests.pdb
+C:\Users\jbjornson\rnd\Patterns\Patterns.Tests\bin\Debug\Patterns.Tests.dll
+C:\Users\jbjornson\rnd\Patterns\Patterns.Tests\obj\Debug\Patterns.Tests.dll

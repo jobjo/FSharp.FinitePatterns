@@ -1,0 +1,13 @@
+C:\Users\jbjornson\rnd\Patterns\src\bin\Debug\Patterns.XML
+C:\Users\jbjornson\rnd\Patterns\src\bin\Debug\FSharp.Patterns.pdb
+C:\Users\jbjornson\rnd\Patterns\src\bin\Debug\FsCheck.dll
+C:\Users\jbjornson\rnd\Patterns\src\bin\Debug\FsCheck.Xunit.dll
+C:\Users\jbjornson\rnd\Patterns\src\bin\Debug\FSharp.Core.dll
+C:\Users\jbjornson\rnd\Patterns\src\bin\Debug\xunit.dll
+C:\Users\jbjornson\rnd\Patterns\src\bin\Debug\FsCheck.xml
+C:\Users\jbjornson\rnd\Patterns\src\bin\Debug\FsCheck.Xunit.xml
+C:\Users\jbjornson\rnd\Patterns\src\bin\Debug\FSharp.Core.xml
+C:\Users\jbjornson\rnd\Patterns\src\bin\Debug\xunit.xml
+C:\Users\jbjornson\rnd\Patterns\src\obj\Debug\FSharp.Patterns.pdb
+C:\Users\jbjornson\rnd\Patterns\src\bin\Debug\FSharp.Patterns.dll
+C:\Users\jbjornson\rnd\Patterns\src\obj\Debug\FSharp.Patterns.dll

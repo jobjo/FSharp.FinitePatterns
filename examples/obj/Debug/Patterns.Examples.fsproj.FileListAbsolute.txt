@@ -1,0 +1,12 @@
+C:\Users\jbjornson\rnd\Patterns\examples\bin\Debug\FSharp.Patterns.Examples.exe.config
+C:\Users\jbjornson\rnd\Patterns\examples\bin\Debug\Patterns.Examples.XML
+C:\Users\jbjornson\rnd\Patterns\examples\bin\Debug\FSharp.Patterns.Examples.exe
+C:\Users\jbjornson\rnd\Patterns\examples\bin\Debug\FSharp.Patterns.Examples.pdb
+C:\Users\jbjornson\rnd\Patterns\examples\bin\Debug\FSharp.Core.dll
+C:\Users\jbjornson\rnd\Patterns\examples\bin\Debug\FSharp.Patterns.pdb
+C:\Users\jbjornson\rnd\Patterns\examples\bin\Debug\FSharp.Core.xml
+C:\Users\jbjornson\rnd\Patterns\examples\obj\Debug\Patterns.Examples.fsprojResolveAssemblyReference.cache
+C:\Users\jbjornson\rnd\Patterns\examples\obj\Debug\Patterns.Examples.fsproj.FSharp.Patterns.Examples.exe.config
+C:\Users\jbjornson\rnd\Patterns\examples\obj\Debug\FSharp.Patterns.Examples.exe
+C:\Users\jbjornson\rnd\Patterns\examples\obj\Debug\FSharp.Patterns.Examples.pdb
+C:\Users\jbjornson\rnd\Patterns\examples\bin\Debug\FSharp.Patterns.dll

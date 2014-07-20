@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30324.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{13AEC498-99E3-4611-8B28-28E6054198CA}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Patterns", "src\Patterns.fsproj", "{0C13639F-4BB5-40C7-9333-629E3FEA0CAA}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Patterns.Tests", "tests\Patterns.Tests.fsproj", "{348EC0C4-7051-478F-A7C0-550FA1A4C3CA}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Patterns.Examples", "examples\Patterns.Examples.fsproj", "{EFB3D507-C4E5-4163-AE6C-26C3BF91BFE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{3BBAB145-5596-46C8-91C1-2012352D8402}"
+	ProjectSection(SolutionItems) = preProject
+		build.bat = build.bat
+		build.fsx = build.fsx
+		fake.bat = fake.bat
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C13639F-4BB5-40C7-9333-629E3FEA0CAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C13639F-4BB5-40C7-9333-629E3FEA0CAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C13639F-4BB5-40C7-9333-629E3FEA0CAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C13639F-4BB5-40C7-9333-629E3FEA0CAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{348EC0C4-7051-478F-A7C0-550FA1A4C3CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{348EC0C4-7051-478F-A7C0-550FA1A4C3CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{348EC0C4-7051-478F-A7C0-550FA1A4C3CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{348EC0C4-7051-478F-A7C0-550FA1A4C3CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFB3D507-C4E5-4163-AE6C-26C3BF91BFE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFB3D507-C4E5-4163-AE6C-26C3BF91BFE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFB3D507-C4E5-4163-AE6C-26C3BF91BFE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFB3D507-C4E5-4163-AE6C-26C3BF91BFE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
