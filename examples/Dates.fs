@@ -1,15 +1,15 @@
-﻿namespace FSharp.Patterns.Examples
+﻿namespace FSharp.FinitePatterns.Examples
 
 module Dates =
     open System
     open System.Globalization
-    open FSharp.Patterns.Operators
-    module G = FSharp.Patterns.Generators
-    module P = FSharp.Patterns.PrettyPrinting
+    open FSharp.FinitePatterns.Operators
+    module G = FSharp.FinitePatterns.Generators
+    module P = FSharp.FinitePatterns.PrettyPrinting
 
     (*
         This is an example of using Patterns for generating different
-        forms of dates.
+        variations of dates.
     *)
 
     /// Pattern for choosing a month.

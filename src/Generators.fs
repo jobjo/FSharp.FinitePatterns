@@ -1,4 +1,4 @@
-﻿namespace FSharp.Patterns
+﻿namespace FSharp.FinitePatterns
 
 /// Pattern generators.
 module Generators =

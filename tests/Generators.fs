@@ -1,14 +1,15 @@
-﻿namespace FSharp.Patterns.Tests
+﻿namespace FSharp.FinitePatterns.Tests
 
 module Generators =
-    open FSharp.Patterns
+    open FSharp.FinitePatterns.Operators
     open FsCheck
 
     let patternGen =
         let leafPatternGen =
             [
-                4, Gen.map Literal (Gen.choose (1,100))
-                1, Gen.constant Fail
+                10, Gen.map literal (Gen.choose (1,100))
+                2, Gen.constant empty
+                1, Gen.constant fail
             ]
             |> Gen.frequency
 
@@ -20,13 +21,17 @@ module Generators =
                     let! c1 = pattern (n / 2)
                     let! c2 = pattern (n / 2)
                     let! op =
-                        Gen.oneof [
-                            Gen.constant Pattern.Choice
-                            Gen.constant Pattern.Sequence
+                        [
+                            4, Gen.constant (<+>)
+                            1, Gen.constant (<|>)
                         ]
-                    return op (c1,c2)
+                        |> Gen.frequency
+                    return op c1 c2
                 }
+
         Gen.sized pattern
+        |> Gen.resize 20
+        
 
     let seed = Random.newSeed ()
     

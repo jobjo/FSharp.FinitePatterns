@@ -1,4 +1,4 @@
-﻿namespace FSharp.Patterns
+﻿namespace FSharp.FinitePatterns
 
 /// Defines basic pattern operators.
 module Operators =
@@ -47,7 +47,7 @@ module Operators =
         | Fail              -> false
         | Empty             -> true
         | Literal _         -> false
-        | Choice (b1,b2)    -> isEmpty b1 && isEmpty b2
+        | Choice (b1,b2)    -> false
         | Sequence (b1,b2)  -> isEmpty b1 && isEmpty b2
 
     /// Checks whether pattern is failing.

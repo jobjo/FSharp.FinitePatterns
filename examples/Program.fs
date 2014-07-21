@@ -1,10 +1,10 @@
-﻿namespace FSharp.Patterns.Examples
+﻿namespace FSharp.FinitePatterns.Examples
 
 module Main =
 
-    open FSharp.Patterns.Operators
-    module G = FSharp.Patterns.Generators
-    module P = FSharp.Patterns.PrettyPrinting
+    open FSharp.FinitePatterns.Operators
+    module G = FSharp.FinitePatterns.Generators
+    module P = FSharp.FinitePatterns.PrettyPrinting
 
     [<EntryPoint>]
     let main argv = 

@@ -1,4 +1,4 @@
-﻿namespace FSharp.Patterns
+﻿namespace FSharp.FinitePatterns
 
 /// Utilities for Pretty Printing.
 module PrettyPrinting =
