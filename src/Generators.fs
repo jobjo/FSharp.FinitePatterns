@@ -5,7 +5,7 @@ module Generators =
 
     /// Generate all patterns.
     let generateAll =
-        let rec go b k = 
+        let rec go b k =
             match b with
             | Fail              ->
                 k []

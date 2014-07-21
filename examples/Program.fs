@@ -8,5 +8,9 @@ module Main =
 
     [<EntryPoint>]
     let main argv = 
-        Sentences.printBookSummaries ()
+        printfn "Dates:"
+        Dates.printAllVarations()
+
+        printfn "\nBook Summaries:"
+        BookSummary.printBookSummaries ()
         0

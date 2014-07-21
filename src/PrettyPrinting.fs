@@ -50,12 +50,12 @@ module PrettyPrinting =
             | p :: ps       -> p <+> sep1 <+> go ps
         List.filter (isEmpty >> not) >> go
 
-    /// Seperates a list of patterns with `commas` and `and`.
+    /// Separates a list of patterns with `commas` and `and`.
     let commaAnd xs = many !"," !"and" (Seq.toList xs)
 
     let commaOnly xs = many !"," !"," (Seq.toList xs)
 
-    /// Seperates a list of patterns with `commas` and `or`.
+    /// Separates a list of patterns with `commas` and `or`.
     let commaOr xs = many !"," !"or" (Seq.toList xs)
 
     /// Transforms a pattern to upper case.
@@ -65,13 +65,13 @@ module PrettyPrinting =
     let toLower : Pattern<string> -> Pattern<string> = map (fun s -> s.ToLower())
 
     /// Renders all patterns with inserted spaces.
-    let renderSpace = prettyPrintAll >> List.map literal >> choose
+    let withRenderSpace = prettyPrintAll >> List.map literal >> choose
 
     /// Render all patterns without any inserted spaces.
-    let renderNoSpace = 
+    let withRenderNoSpace = 
         G.generateAll >> List.map (render "" []) >> List.map literal >> choose
 
-    /// Transforms a string pattern to a sentance. First letter upper case and end with dot.
+    /// Transforms a string pattern to a sentence. First letter upper case and end with dot.
     let toSentence : Pattern<string> -> Pattern<string> =
         let firstLetterUpper = function
             | ""    -> 

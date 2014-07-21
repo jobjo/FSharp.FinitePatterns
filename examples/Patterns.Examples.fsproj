@@ -47,7 +47,8 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sentences.fs" />
+    <Compile Include="Dates.fs" />
+    <Compile Include="BookSumary.fs" />
     <Compile Include="Program.fs" />
     <None Include="App.config" />
   </ItemGroup>

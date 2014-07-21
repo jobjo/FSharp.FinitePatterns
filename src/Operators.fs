@@ -23,6 +23,9 @@ module Operators =
     /// Monadic bind.
     let bind p f = join <| map f p
 
+    /// Applicative composition operator.
+    let apply pf p = bind pf <| fun f -> bind p (fun x -> f x)
+
     let rec internal mapFirst f p =
         match p with
         | Fail              -> Fail
@@ -63,8 +66,6 @@ module Operators =
                 go b1 (fun x -> go b2 (fun y -> k (x || y)))
         go p id
 
-
-
     /// The failing pattern. Identity for Choice.
     let fail = Fail
         
@@ -92,6 +93,9 @@ module Operators =
 
     /// Sequences a sequence of patterns.
     let sequence xs = Seq.fold add Empty xs
+
+    /// Sequences a sequence of patterns with a separator.
+    let rec separateBy s = Utils.joinWith s >> sequence
 
     /// Create a pattern from an optional value.
     /// Maps None to the pattern Fail.
@@ -141,7 +145,7 @@ module Operators =
     let (<?)        = prefix
     let (?>)        = postfix
     let (>>=)       = bind
-
+    let (<*>)       = apply
 
     /// Composed unary operators
     let (!?!) x     = !?(!x)
@@ -149,6 +153,20 @@ module Operators =
     let (!?!<) xs   = !?(!<xs)
     let (!?!~) x    = !?(!~x)
 
+    /// Computation expression builder.
+    type PatternBuilder() =
+        member this.Bind (p,f) = p >>= f
+        member this.Return(x) = Literal x
+        member this.Yield(x) = Literal x
+        member this.YieldFrom(x) = x
+        member this.ReturnFrom(p) = p
+        member this.Zero() = Fail
+        member this.For (ps,f) = sequence <| Seq.map f ps
+        member this.Combine(p1,p2) = p1 <+> p2
+        member this.Delay(f) = f ()
+
+    /// Builds a pattern work flow
+    let pattern  = PatternBuilder()
 
 
 
