@@ -45,9 +45,13 @@ module Properties =
         (p <+> fail <+> p) == fail
 
     [<Property (Arbitrary = [| typeof<Generators.CustomGenerators> |])>]
-    let ``literal id for monadic bind`` (p: Pattern<int>) =
+    let ``literal right identity for monadic bind`` (p: Pattern<int>) =
         printfn "%s" (string p)
         p >>= literal == p
+
+    [<Property (Arbitrary = [| typeof<Generators.CustomGenerators> |])>]
+    let ``literal left identity for monadic bind`` f x =
+        literal x >>= f  == f x
 
     [<Property (Arbitrary = [| typeof<Generators.CustomGenerators> |])>]
     let ``bind is associative`` (m: Pattern<int>) =
@@ -66,30 +70,7 @@ module Properties =
             | 2 -> !(-x) <+> !(x)
             | 3 -> !(2*x) <|> !(3*x)
             | _ -> fail
-        let p1 =
-            pattern { 
-                let! y =
-                    pattern { 
-                        let! x = m
-                        return! f x
-                    }
-                return! g y
-            }
-        let p2 =
-            pattern {
-                let! x = m
-                return! 
-                    pattern {
-                        let! y = f x
-                        return! g y
-                    }
-            }
-        let p3 =
-            pattern {
-                let! x = m
-                let! y = f x
-                return! g y
-            }
-        p1 == p2 && p2 == p3
+        ((m >>= f) >>= g) == (m >>= (fun x -> f x >>= g))
+        
 
 
